@@ -17,7 +17,7 @@ Lets say we have the following csv (the real file is in `/spec/fixtures/text.csv
 | 2 | Freak, Go Home      | DARKSIDE     |
 
 
-The end result, would be two events, where the first event would hold the following data:
+**The end result should be two events pushed to a queue**, where the first event would hold the following data:
 
 ```ruby
 # wanted result of the row at index 1
@@ -33,9 +33,13 @@ You’re free to use Ruby or Javascript. You're free to use the tools that you w
 If you would like to do it in Ruby, we’ve set up a ultra simple file structure and a vague test. 
 
 You can solve this the simplest way possible, or go further, it really depends on how far you want to go. You're free to use an in memory event store, or use a real store like RabbitMQ.
-We only require the given output from the given input and that you use EventSourcing principles. You can test, or not test, it is up to you. But clear instructions on how to setup & execute your app should be given (or if you're really on fire, create a Docker image with the environment allready setup!).
+We only require the given output from the given input and that you use EventSourcing principles. You should provide some tests! And quickly explain the logic of your solution (ie: the role of classes/files).
+Clear instructions on how to setup & execute your app should be given.
 
 This challenge should be quite simple, focus on doing it well :)
 
+Take care of your commit history (stash or not to stash ...), class/method/queue/event names, file struture, coding style, ... At Rights'Up, we like to say that when we read someone's code, we should feel that he really cared about it: it should be clean, consistent and easy to understand! (Idea taken from Robert C. Martin)
+
 ps: In other to maintain privacy of answers, don't fork this project if you use it. Instead, pull the code locally and create your own repository.
+
 ps2: if someone can fix my markdown table, please create a pull request ;) It works on pure markdown, but not on github markdown!
